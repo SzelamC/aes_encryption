@@ -1,6 +1,9 @@
 # Start
 `yarn install` to install packages
+
 `yarn dev` to start the express server
+
+`yarn test` to run the test
 
 # Encryption
 
