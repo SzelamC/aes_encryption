@@ -1,3 +1,7 @@
+# Start
+`yarn install` to install packages
+`yarn dev` to start the express server
+
 # Encryption
 
 ## Encrypt
