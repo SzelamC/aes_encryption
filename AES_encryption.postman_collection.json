@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "ceff93e7-a743-48e8-95a2-12b78d0f2d07",
+		"name": "AES_encryption",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/aes/encrypt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "plain_text",
+							"value": "Apple",
+							"type": "text"
+						},
+						{
+							"key": "aes_key",
+							"value": "404D635166546A576E5A723475377721",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/aes/encrypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"aes",
+						"encrypt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/aes/decrypt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cipher_text",
+							"value": "44961e8aa5e32883b469b6067763b3e1",
+							"type": "text"
+						},
+						{
+							"key": "aes_key",
+							"value": "404D43165546A123E5A7234753777211",
+							"type": "text"
+						},
+						{
+							"key": "plain_text",
+							"value": "I am so happy",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/aes/decrypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"aes",
+						"decrypt"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
